@@ -1,1 +1,18 @@
-<p>second-screen works!</p>
+<div class="grid-container">
+    <div class="grid-item">
+        <h1>Component without Signal</h1>
+    </div>
+    <div class="grid-item">
+        <h3>Counter: {{counter}}</h3>
+    </div>
+    <div class="grid-item">
+        <div class="grid-containerButtons">
+            <div class="grid-item">
+                <app-button [text]="'Increment Counter'" [click]="increment" />
+            </div>
+            <div class="grid-item">
+                <app-button [text]="'Decrement Counter'" [click]="decrement" />
+            </div>
+        </div>
+    </div>
+</div>

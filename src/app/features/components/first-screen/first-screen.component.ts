@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { ButtonComponent } from 'src/app/shared/components/button/button.component';
 
 @Component({
   selector: 'app-first-screen',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, ButtonComponent],
   templateUrl: './first-screen.component.html',
   styleUrls: ['./first-screen.component.scss'],
 })
-export class FirstScreenComponent {}
+export class FirstScreenComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+}

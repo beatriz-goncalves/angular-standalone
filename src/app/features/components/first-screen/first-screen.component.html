@@ -1,8 +1,8 @@
-<div>
-    <button type="button" routerLink="/secondScreen">
-        Second Screen
-    </button>
-    <button type="button" routerLink="/thirdScreen">
-        Third Screen
-    </button>
+<div class="grid-container">
+    <div class="grid-item">
+        <app-button [text]="'Second Screen'" routerLink="/secondScreen" />
+    </div>
+    <div class="grid-item">
+        <app-button [text]="'Third Screen'" routerLink="/thirdScreen" />
+    </div>
 </div>

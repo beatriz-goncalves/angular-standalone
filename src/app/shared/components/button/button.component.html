@@ -1,0 +1,4 @@
+<button *ngIf="routerLink; else buttonWithoutRouterLink" routerLink={{routerLink}}>{{ text }}</button>
+<ng-template #buttonWithoutRouterLink>
+    <button (click)="handleClick()">{{ text }}</button>
+</ng-template>
