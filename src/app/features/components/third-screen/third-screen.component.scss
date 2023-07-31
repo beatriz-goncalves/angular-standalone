@@ -2,3 +2,8 @@
     position: fixed;
     bottom: 20px;
 }
+
+.grid-containerButtons{
+    display: grid;
+    grid-template-columns: 8.5% 8.5%;
+}
